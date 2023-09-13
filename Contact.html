@@ -4,59 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Sunbrim Premium</title>
 </head>
 
-<section class="contact-info">
-    <h2>Contact Information</h2>
-    <p>Feel free to reach out to us for any inquiries or assistance.</p>
+<body>
+    <header>
+        <div class="logo-and-nav">
+            <div class="logo">
+                <img src="Images/logo.jpg"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li class="submenu">
+                        <a href="blog.html">Blog <span class="arrow">▼</span></a>
+                        <ul class="submenu-content">
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="Testimonial.html">Testimonials</a></li>
+                        </ul>
+                    </li>
 
-    <li><strong>Phone:</strong> +2544567890</li>
-    <li><strong>Email:</strong> info@sunbrimpremium.site</li>
-    <!-- Add more contact info as needed -->
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search_query">
+                <form action="search.php" method="POST">
+                    <input type="text" name="search_query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
 
-</section>
+    </header>
 
-<section class="contact-form">
-    <h2>Contact Us</h2>
-    <form action="send_email.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Feel free to reach out to us for any inquiries or assistance.</p>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <li><strong>Phone:</strong> +2544567890</li>
+        <li><strong>Email:</strong> info@sunbrimpremium.site</li>
+        <!-- Add more contact info as needed -->
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+    </section>
 
-        <button type="submit">Send</button>
-    </form>
-</section>
-<section class="map-section">
-    <h2>Visit Us</h2>
-    <p>Experience the flavors at our bakery:</p>
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63742.74829189887!2d35.55651199143823!3d3.1153987527616405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLodwar%20township!5e0!3m2!1sen!2ske!4v1693485161694!5m2!1sen!2ske" width="600"
-            height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</section>
-<footer>
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="footer-links">
-        <a href="#">Blog</a>
-        <a href="#">Gallery</a>
-        <a href="Contact.html">Location</a>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    </div>
-    <p>&copy; 2023 Sunbrim Premium.<br> All rights reserved.</p>
-</footer>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <section class="map-section">
+        <h2>Visit Us</h2>
+        <p>Experience the flavors at our bakery:</p>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63742.74829189887!2d35.55651199143823!3d3.1153987527616405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sLodwar%20township!5e0!3m2!1sen!2ske!4v1693485161694!5m2!1sen!2ske" width="600"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="Blog.html">Blog</a>
+            <a href="Contact.html">Location</a>
+
+        </div>
+        <p>&copy; 2023 Sunbrim Premium.<br> All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

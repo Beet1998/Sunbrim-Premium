@@ -5,16 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Testimonials</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Sunbrim Premium</title>
 </head>
 
 <body>
     <header>
-        <!-- Your header content goes here -->
+        <div class="logo-and-nav">
+            <div class="logo">
+                <img src="Images/logo.jpg"></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li class="submenu">
+                        <a href="blog.html">Blog <span class="arrow">▼</span></a>
+                        <ul class="submenu-content">
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="Testimonial.html">Testimonials</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search_query">
+                <form action="search.php" method="POST">
+                    <input type="text" name="search_query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
     </header>
 
     <main>
-
+        <title>Testimonial</title>
         <section class="content">
             <h2>Our Happy Customers</h2>
             <p>Read what our satisfied customers have to say about our products:</p>
@@ -32,17 +58,28 @@
                         <span class="star">&#9733;</span>
                         <span class="star">&#9734;</span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p class="name">John Doe</p>
+                    <p>Sunbrim does it best when it comes to Confectionaries and snack drinks.</p>
+                    <p class="name">Sudi Newton</p>
                 </div>
                 <!-- Add more testimonials as needed -->
             </div>
         </section>
     </main>
-
     <footer>
-        <!-- Your footer content goes here -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="Blog.html">Blog</a>
+            <a href="Contact.html">Location</a>
+
+        </div>
+        <p>&copy; 2023 Sunbrim Premium.<br> All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
