@@ -18,16 +18,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Server settings
         $mail->SMTPDebug = SMTP::DEBUG_OFF; // Turn off debugging
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com'; // Your SMTP server
+        $mail->Host = 'namecheap.com'; // Your SMTP server
         $mail->SMTPAuth = true;
-        $mail->Username = 'your@email.com'; // Your email address
-        $mail->Password = 'your-password'; // Your email password
+        $mail->Username = 'info@sunbrimpremium.site'; // Your email address
+        $mail->Password = 'Tonylee@1998'; // Your email password
         $mail->SMTPSecure = 'tls'; // TLS or SSL
         $mail->Port = 587; // Port number
 
         // Recipients
         $mail->setFrom('your@email.com', 'Your Name'); // Your email address and name
-        $mail->addAddress('recipient@email.com', 'Recipient Name'); // Recipient's email address and name
+        $mail->addAddress('info@sunbrimpremium.site', 'SunBrim'); // Recipient's email address and name
 
         // Content
         $mail->isHTML(true);
