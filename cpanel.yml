@@ -3,3 +3,8 @@ deployments:
   - destination: /public_html
     repo: <https://github.com/Beet1998/Sunbrim-Premium.git>
     branch: main
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    -/bin/cp contact.html $DEPLOYPATH
+    
