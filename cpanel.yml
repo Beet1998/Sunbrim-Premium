@@ -1,0 +1,5 @@
+---
+deployments:
+  - destination: /public_html
+    repo: <https://github.com/Beet1998/Sunbrim-Premium.git>
+    branch: main
