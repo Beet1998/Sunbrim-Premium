@@ -14,4 +14,4 @@ deployment:
     - /bin/cp Search.php $DEPLOYPATH
 
     # Copy the "images" directory (replace "images" with the actual directory name if different)
-    - /bin/cp -R Images/ $DEPLOYPATH/images
+    - /bin/cp -R Images/ $DEPLOYPATH/Images
