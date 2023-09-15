@@ -1,10 +1,17 @@
 ---
-deployments:
-  - destination: /public_html
-    repo: <https://github.com/Beet1998/Sunbrim-Premium.git>
-    branch: main
-    - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    -/bin/cp contact.html $DEPLOYPATH
-    
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sunbohvw/public_html
+
+    # Copy HTML files
+    - /bin/cp -R *.html $DEPLOYPATH
+
+    # Copy CSS file
+    - /bin/cp styles.css $DEPLOYPATH
+
+    # Copy PHP files for messaging and search activities (adjust filenames as needed)
+    - /bin/cp Send_email.php $DEPLOYPATH
+    - /bin/cp Search.php $DEPLOYPATH
+
+    # Copy the "images" directory (replace "images" with the actual directory name if different)
+    - /bin/cp -R images/ $DEPLOYPATH/images
